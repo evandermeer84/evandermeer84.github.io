@@ -1,30 +1,133 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <link rel="stylesheet" href="app.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Grad Student</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background: #4a90e2;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      background: #333;
+      padding: 0.5rem;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      border-bottom: 2px solid #4a90e2;
+      padding-bottom: 0.25rem;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 1.5rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #eee;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>Your Name</h1>
+    <p>Graduate Student, Your Department – Your University</p>
+  </header>
 
-<h1>Emily Vandermeer</h1>
-<h2>Passionate, Hard-Working </h2>
-<div>
-    <h2>Past Projects</h2>
-    <h3>Reserach Project</h3>
-    <!-- Put a link to the pdf here of the article that I wrote-->
-    <p>An article that concludes the research I spent the summer of 2021 working on. Research centered on the effects of the Spectre and 
-        Meltdown mitigations on the average user. I analyzed data collected through the Phoronix Test Suite system. Through statisical anaylsis of the 
-        data collected, I determined the probabiity the mitigation had a significant effect on the performance of the computer. 
-    </p>
-    <h3>Typing Lab Created</h3>
-    <p>For reasons of privacy and protected information, I can not post the code for this project, as it is the solution and grading scripts
-        to a lab assignment that is currently being used by the department of computer science at the U of A. This is a simple typing game with three levels,
-        written in Assembly to be run on the Risc-V simulator as it uses the memory mapped IO simulator and timer funcationality. This assignment was conceputalized
-        by me, and the solution was written as a reference for future TA's. I also wrote am instructional webpage as a guide for students.
-    </p>
-    <p>
-        <img src="images/TypingGameDemo2.gif" width="50%">
-    </p>
-</div>
+  <nav>
+    <a href="#bio">Bio</a>
+    <a href="#research">Research</a>
+    <a href="#publications">Publications</a>
+    <a href="#teaching">Teaching</a>
+    <a href="#awards">Awards</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
+  <main>
+    <section id="bio">
+      <h2>About Me</h2>
+      <p>I’m a graduate student in [Your Program] at [Your University], working under the supervision of [Supervisor Name]. My research focuses on [your research area]. I’m passionate about [key interests or goals].</p>
+    </section>
+
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li><strong>Thesis:</strong> "Title of your thesis" – Brief summary of what it's about</li>
+        <li>Other key projects or collaborations</li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <ul>
+        <li><strong>Your Name</strong>, Coauthor. (Year). Title. <em>Journal/Conference</em>.</li>
+        <li><strong>Your Name</strong>, Coauthor. (Year). Title. <em>Journal/Conference</em>.</li>
+      </ul>
+    </section>
+
+    <section id="teaching">
+      <h2>Teaching</h2>
+      <ul>
+        <li>TA – Course Title (Semester, Year), brief description or responsibilities</li>
+        <li>Guest lecture – Topic, Course, Date</li>
+      </ul>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Scholarships</h2>
+      <ul>
+        <li>Scholarship Name (Year)</li>
+        <li>Conference Presentation Award (Year)</li>
+        <li>Graduate Fellowship (Year)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: your.email@university.ca<br>
+      LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a><br>
+      GitHub / Google Scholar / Personal links</p>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name | Last updated: July 2025
+  </footer>
 </body>
 </html>
