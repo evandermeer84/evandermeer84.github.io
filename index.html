@@ -9,22 +9,38 @@
       font-family: 'Helvetica Neue', sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
       background-color: #f9f9f9;
       color: #333;
     }
     header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
       background: #4a90e2;
       color: white;
       padding: 2rem 1rem;
-      text-align: center;
     }
-    header h1 {
+    .header-text {
+      flex: 1 1 60%;
+    }
+    .header-text h1 {
       margin: 0;
       font-size: 2rem;
     }
-    header p {
+    .header-text p {
       font-size: 1.2rem;
+    }
+    .header-photo {
+      flex: 1 1 30%;
+      text-align: right;
+    }
+    .header-photo img {
+      max-width: 150px;
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid white;
     }
     nav {
       background: #333;
@@ -62,12 +78,21 @@
       background: #eee;
       font-size: 0.9rem;
     }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .header-photo {
+        margin-top: 1rem;
+      }
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Your Name</h1>
-    <p>Graduate Student, Your Department – Your University</p>
+    <h1>Emily Vandermeer</h1>
+    <p>Graduate Student, Computing Science – University of Alberta</p>
   </header>
 
   <nav>
